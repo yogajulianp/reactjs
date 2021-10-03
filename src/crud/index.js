@@ -88,13 +88,30 @@ export default class Crud extends Component {
        });
     }
 
+    hapusData = (id) => {
+        console.log("Hapus id item : ", id);
+        const productSelainDihapus = this.state.products
+            .filter( (product)=> product.id !== id )
+            .map((filterProduct) => {
+                return filterProduct
+                
+            })
+            console.log(productSelainDihapus);
+
+            this.setState({
+                products: [
+                    ...productSelainDihapus
+                ]
+            });
+    }
+
     render() {
         //console.log(this.state.products);
         return (
             <div>
                 <NavbarMenu/>
                 <div className="m-5">
-                    <Tabel products={this.state.products} editData={this.editData}/>
+                    <Tabel products={this.state.products} editData={this.editData} hapusData={this.hapusData}/>
                     <Formulir {...this.state} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
                 </div>
                 
