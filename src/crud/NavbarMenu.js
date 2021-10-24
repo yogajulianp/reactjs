@@ -6,7 +6,7 @@ const NavbarMenu = () => {
     <div>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">Catatan Produk Alkamilabutique</Navbar.Brand>
+          <Navbar.Brand href="#home">Catatan Belanja</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

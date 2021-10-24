@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Count from './components/Count'
+import Crud from './crud';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <Count/>  
+     <Crud/>
   );
 }
 

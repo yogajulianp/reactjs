@@ -18,7 +18,7 @@ const Formulir =({nama, deskripsi, harga, handleChange, handleSubmit, id}) =>{
         <Col>
           <Form  onSubmit={handleSubmit} >
             <Form.Group  controlId="nama">
-              <Form.Label>Nama Baju</Form.Label>
+              <Form.Label>Nama Barang</Form.Label>
               <Form.Control
                 type="text"
                 name="nama"
